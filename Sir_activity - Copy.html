@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Property Dictionary</title>
+    <style>
+        body {
+            background-image: url(mi.gif);
+            margin: 0;
+            padding: 0;
+            font-family: Copperplate;
+            color: #fff;
+            line-height: 1.6;
+        }
+		
+        header {
+            text-align: center;
+            background-color: #111;
+			font-family: Cooper Black;
+            padding: 20px 0;
+        }
+		
+		header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+			transition: 0.5s;
+        }
+		header h1:hover, a:hover {
+			color:#0f5570;
+			}
+		
+		#main {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 20px;
+			max-width: 90%;
+			margin: 20px auto;
+			padding: 6vh 5vh;
+			background: #1f1f1f;
+			border-radius: 10px;
+			height:100vh;
+			background-image:url(bg.gif);
+			box-shadow: 0px 0px 25px #888888;
+        }
+      
+        footer {
+            background-color: #111;
+            text-align: center;
+            width: 100%;
+			padding-top: 30px;
+			padding-bottom: 30px;
+        }
+		#fly {
+		position:absolute;
+		width:100px;
+		height:auto;
+		animation-name: img;
+		animation-duration: 6s;
+		animation-iteration-count: infinite;
+		pointer-events: none;
+		transition: top 0.3s ease, left 0.3s ease, opacity 0.6s ease;
+		opacity: 0; 
+		}
+		
+		#star {
+		position:absolute;
+		width:100px;
+		height:auto;
+		left:12%;
+		top:1%;
+		}	
+		
+		.a {
+			background-color: black;
+			border: 5px outset black;
+			text-align: center;
+			position:relative;
+			left: 25%;
+			width: 500px;
+			height: 300px;
+			transition: 1s;
+			opacity:70%;
+			}
+		.b  {
+			background-color: black;
+			border: 5px outset black;
+			text-align: center;
+			position:relative;
+			left:15%;
+			width: 500px;
+			height: 300px;
+			transition: 1s;
+			opacity:70%;
+			}	
+		.c  {
+			background-color: black;
+			border: 5px outset black;
+			text-align: center;
+			position:relative;
+			left:25%;
+			width: 500px;
+			height: 300px;
+			transition: 1s;
+			opacity:70%;
+			}	
+		.d  {
+			background-color: black;
+			border: 5px outset black;
+			text-align: center;
+			position:relative;
+			left:15%;
+			width: 500px;
+			height: 300px;
+			transition: 1s;
+			opacity:70%;
+			}
+		.e  {
+			background-color: black;
+			border: 5px outset black;
+			text-align: center;
+			position:relative;
+			left:117%;
+			width: 500px;
+			height: 300px;
+			transition: 1s;
+			opacity:70%;
+			}
+		.a:hover, .b:hover, .c:hover, .d:hover, .e:hover {
+			  background-image: url(mi.gif);
+			  background-size:100%;
+			  opacity:100%;
+			  }
+			  
+		#hyper {
+			position:absolute;
+			top: 3%;
+			left: 85%;
+			}
+		a {
+			color: white;
+			text-decoration:none;
+			transition:0.5s;
+			}
+        footer h5 {
+				color: white;
+				transition: 0.5s;
+				display: inline-block;
+				position: relative;
+			}
+		footer h5::after {
+		    content: "10-Accountable";
+			display: none;
+			position: absolute;
+			left:6%;
+			}
+		footer h5:hover::after {
+			display: block;
+			}
+		footer h5:hover::before {
+			content: "";
+			display: none;
+			}
+			footer h5:hover {
+			color:#0f5570;
+			}
+    </style>
+</head>
+<body>
+    <header>
+	<h1>CSS Property Dictionary</h1>
+	<div id="hyper">
+		<a href="Sir_activity - Copy.html" target="_blank">HOME</a> &nbsp&nbsp
+		<a href="https://chatgpt.com/" target="_blank">HELP</a><br>
+		<a href="https://www.geeksforgeeks.org/css-cheat-sheet-a-basic-guide-to-css/" target="_blank">ABOUT</a>&nbsp&nbsp
+		<a href="https://www.w3schools.com/css/default.asp" target="_blank">FAQ</a>
+	</div>
+    </header>
+    <div id="main">
+		<div class="a">
+			<h2>CSS Pseudo-classes</h2>
+			<p>A CSS pseudo-element is used to style specific parts of an element.</p>
+			<p>For example, it can be used to:</p>
+			<ul>
+				<li>Style the first letter or line of an element</li>
+				<li>Insert content before or after an element</li>
+				<li>Style the markers of list items</li>
+				<li>Style the viewbox behind a dialog box</li>
+			</ul>
+		</div>
+		<div class="b">
+			<h2>CSS Padding</h2>
+			<p>Padding is used to create space around an
+			element's content, inside of any defined borders. 
+			The CSS padding properties are used to generate 
+			space around an element's content, inside of any
+			defined borders.</p>
+		</div>
+		<div class="c">
+			<h2>CSS Backgrounds</h2>
+			<p>The CSS background properties are used to add background effects for elements. With CSS, a color is most often specified by:</p>
+			<ul>
+				<li>A valid color name - like "red"</li>
+				<li>A HEX value - like "#ff0000"</li>
+				<li>An RGB value - like "rgb(255,0,0)"</li>
+			</ul>
+		</div>
+		<div class="d">
+			<h2>CSS Margins</h2>
+			<p>Margins are used to create space around elements, outside of any defined borders. The CSS margin properties are used to create space around elements, outside of any defined borders.</p>
+		</div>
+		<div class="e">
+			<h2>CSS Height, Width and Max-width</h2>
+			<p>The CSS height and width properties are used to set the height and width of an element.</p>
+			<p>The CSS max-width property is used to set the maximum width of an element. The height and width properties do not include padding, borders, or margins. They set the height/width of the area inside the padding, border, and margin of the element.</p>
+		</div>
+		<img id="fly" src="insect.gif" alt="/V\">
+		<img id="star" src="star.gif" alt="*">
+	</div>
+    <footer>
+       <h5>-Andrei Parayno</h5>
+    </footer>
+<script>
+    // Select the fly element and all interactive divs
+    const fly = document.getElementById('fly');
+    const hoverTargets = document.querySelectorAll('.a, .b, .c, .d, .e');
+
+    // Add event listeners to each target div
+    hoverTargets.forEach(target => {
+        target.addEventListener('mouseover', (event) => {
+            const rect = target.getBoundingClientRect();
+            // Position fly at the center of the hovered element, accounting for scroll
+            fly.style.left = `${rect.left + rect.width / 2 + window.scrollX}px`;
+            fly.style.top = `${rect.top + rect.height / 2 + window.scrollY}px`;
+            fly.style.opacity = 1; // Make the fly visible with a fade-in effect
+        });
+
+        target.addEventListener('mouseout', () => {
+            fly.style.opacity = 0; // Hide the fly with a fade-out effect
+        });
+    });
+</script>
+</body>
+</html>
